@@ -42,12 +42,11 @@ header {
 /*Logo Web Developer*/
 svg {
     /*background: lightyellow;*/
-    transition: .8s;
     padding: 1px;
+    transition: .3s;
 }
 svg:hover {
-    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
-    transition: .5s;
+    filter: blur(1.5px);
 }
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -77,6 +76,30 @@ h1 {
 main {
     padding: 50px 0;
 }
+main h2 {
+    margin-bottom: 7px;
+    color: #2A2424;
+}
+main p {
+    margin-bottom: 12px;
+    font-size: 17px;
+    color: #181515;
+}
+main p:first-letter {
+    /*color: #1f81d1;*/
+    color: rgba(31, 129, 209, 0.85);
+    font-weight: 600;
+    font-size: 19px;
+    text-shadow: 3px 1px rgba(31, 129, 209, 0.51);
+}
+.main__text p:nth-child(4) span {
+    font-style: italic;
+    font-weight: 600;
+}
+.photo {
+    float:left;
+    margin-right: 15px;
+}
 .photo img {
     width: 332px;
     transition: .6s;
@@ -91,7 +114,7 @@ main {
 .info p {
 
     color: #040404;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     display: inline-block;
     margin-right: 15px;
@@ -118,8 +141,16 @@ main {
     font-size: 15px;
 }
 .info p:hover i {
-    color: #566AFF;
+    color: #11b4ff;
     transition: .3s;
+}
+.main__text {
+
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 /*Footer*/
 
@@ -134,18 +165,27 @@ footer {
     justify-content: flex-end;
     align-items: center;
     color: #685959;
+    transition: .5s;
+    position: relative;
 
 }
-footer p:not(.copyright) {
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+}
+.footer p:not(.copyright) {
     padding: 5px;
 }
-footer p:hover:not(.copyright) {
+.footer p:hover:not(.copyright) {
     box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
     transition: .5s;
     cursor: pointer;
 }
 .copyright span {
-    color: #6243ff;
+    color: #11b4ff;
 }
 .licence {
     margin-top: 5px;
@@ -154,5 +194,3 @@ footer p:hover:not(.copyright) {
     color: #2C2626;
     font-weight: 500;
 }
-
-
