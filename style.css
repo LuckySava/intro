@@ -195,27 +195,33 @@ footer {
     font-weight: 500;
 }
 
-/*>>>>>>Data.html<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>    study.html        <<<<<<<<<*/
 .study__block {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    outline: 1px solid #ff3a9d;
+    /*outline: 1px solid #ff3a9d;*/
 }
 .study__block__items {
     width: 400px;
     height: 200px;
-    outline: 1px solid orangered;
+    /*outline: 1px solid orangered;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
-.study__item_1__img {
-}
 
 .study__item_1__text {
     flex-wrap: wrap;
+}
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>    Work   <<<<<<<<<<<<<<<<<<<*/
+
+.work__text, .hobbi__text, .study__text {
+    text-align: center;
+    font-size: 28px;
+    color: coral;
+    text-shadow: 3px 1px 2px #e9af94;
 }
