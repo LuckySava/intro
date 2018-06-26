@@ -63,16 +63,19 @@ h1 {
     color: #040404;
     font-size: 18px;
     font-weight: 400;
-    line-height: 18.45px;
     padding: 5px 10px;
-    border-radius: 3px;
-    transition: .3s;
+    border-radius: 4px 4px 0 0;
+
+
 }
 .menu ul li:hover a {
-    background-color: rgba(183, 183, 183, 0.58);
+    /*background-color: rgba(217, 217, 217, 0.58);*/
+    border-bottom: 1px solid #5f6b7b;
+    color: #85a3b1;
+    transition: .3s;
 }
 
-/*section Main*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    section Main  <<<<<<<<<<<<<*/
 main {
     padding: 50px 0;
 }
@@ -188,7 +191,7 @@ footer {
     cursor: pointer;
 }
 .copyright span {
-    color: #11b4ff;
+    color: rgba(31, 129, 209, 0.85);
 }
 .licence {
     margin-top: 5px;
@@ -243,8 +246,11 @@ footer {
     height: 135px;
     border-radius: 50%;
     position: absolute;
-    top: 15%;
+    top: 14%;
     left: 32.5%;
+}
+.study__item_2__img {
+    top: 13%;
 }
 .study__item_1__img:hover img {
     transform: rotate(180deg);
