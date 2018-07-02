@@ -16,12 +16,15 @@ a {
     padding: 0 100px;
     /*outline: 1px solid gainsboro;*/
 }
+.html {
+    min-height: 100%;
+}
 
 /*Set a gradient*/
 
 body {
-    background: linear-gradient(135deg, rgba(246,248,249,1) 9%,rgba(246,248,249,1) 9%,rgba(215,222,227,1) 28%,rgba(229,235,238,1) 43%,rgba(245,247,249,1) 74%,rgba(245,247,249,1) 75%);
-    background-repeat: repeat;
+    /*background: linear-gradient(135deg, rgba(246,248,249,1) 9%,rgba(246,248,249,1) 9%,rgba(215,222,227,1) 28%,rgba(229,235,238,1) 43%,rgba(245,247,249,1) 74%,rgba(245,247,249,1) 75%);*/
+    background: url(img/bg/bg-light-4834.png);
     height: 100vh;
 }
 
@@ -63,8 +66,9 @@ h1 {
     color: #040404;
     font-size: 18px;
     font-weight: 400;
-    padding: 5px 10px;
+    padding: 5px 0;
     border-radius: 4px 4px 0 0;
+    margin-right: 10px;
 
 
 }
@@ -78,6 +82,8 @@ h1 {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    section Main  <<<<<<<<<<<<<*/
 main {
     padding: 50px 0;
+    background: url(img/work/background19.png);
+
 }
 .study {
     padding: 30px 0;
@@ -186,7 +192,7 @@ footer {
     padding: 5px;
 }
 .footer p:hover:not(.copyright) {
-    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    box-shadow: 2px 2px 5px rgba (154, 147, 140, 0.5)
     transition: .5s;
     cursor: pointer;
 }
@@ -261,7 +267,7 @@ footer {
 }
 .study__item__1__text {
     background: #dfe7f2;
-    padding: 75px 25px 3px;
+    padding: 75px 25px 10px;
 }
 .study__item__1__text span {
     font-weight: 600;
@@ -286,9 +292,65 @@ footer {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>    Work   <<<<<<<<<<<<<<<<<<<*/
 
-.work__text, .hobbi__text, .study__text {
+.hobbi__text, .study__text {
     text-align: center;
     font-size: 28px;
     color: coral;
     text-shadow: 3px 1px 2px #e9af94;
+}
+
+.work__block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.block__cloud {
+    position: relative;
+}
+.work__block .block__cloud p,
+.work__block .block__cloud p span {
+    font-family: 'Pacifico', cursive;
+    font-size: 21px;
+    text-align: center;
+    color: #040404;
+
+}
+.work__block .block__cloud p span {
+    font-size: 27px;
+}
+.work__block .block__cloud p {
+    position: absolute;
+    top: 50px;
+    color: #040404;
+}
+.work p:first-letter {
+    color: rgba(31, 129, 209, 0.85);
+    font-weight: 600;
+    font-size: 24px;
+    text-shadow: 3px 1px rgba(31, 129, 209, 0.51);
+}
+.work {
+    padding: 30px;
+}
+.work__blocks_logo {
+    margin-top: 15px;
+}
+.html_logo {
+}
+.css_logo {
+}
+.js_logo {
+    /*width: 80px;*/
+    height: 70px;
+}
+.react_logo {
+    width: 100px;
+
+}
+.npm_logo {
+    width: 100px;
+}
+.work__blocks_logo img:hover {
+    filter: grayscale(1.2);
+    transition: .3s;
 }

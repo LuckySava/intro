@@ -5,7 +5,9 @@
     <title>Web Developer Savchenko Alexandr</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/icons8-developer-mode-64.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons8-google-code-64.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 
@@ -34,10 +36,37 @@
     </div>
 </header>
 
-<main class="main clearfix">
+<main class="main work clearfix">
 
-    <div class="work__text">
-        Сторінка в процесі створення і наповнення контентом...
+    <div class="wrapper">
+        <div class="work__blocks">
+            
+            <div class="work__block blocks__1">
+
+                <!--<img class="block__img" src="img/work/boy.png" alt="young boy">-->
+
+                <div class="block__cloud">
+                    <p> <span>Це те, що я люблю! :)</span>
+                        <br>
+                        Web Developer - найкрутіша професія у світі
+                        <br>
+                        для креативних, кмітливих
+                        <br>
+                        та прогресивинх!
+                    </p>
+                    <img class="clouds" src="img/work/da2c6875edd8116afb945cbaa6f246e5.png" alt="clouds">
+                    <div class="work__blocks_logo">
+                        <img src="https://png.icons8.com/color/100/000000/html-5.png" alt="" class="html_logo wow bounceInDown" data-wow-duration="1.2s">
+                        <img src="https://png.icons8.com/color/100/000000/css3.png" alt="" class="css_logo wow bounceInDown" data-wow-duration="1.6s">
+                        <img src="img/work/js.png" class="js_logo wow bounceInDown" data-wow-duration="1.9s">
+                        <img src="img/work/ReactJS.png" alt="react" class="react_logo wow bounceInDown" data-wow-duration="2.1s">
+                        <img src="img/work/npm.png" alt="" class="npm_logo wow bounceInDown" data-wow-duration="2.3s">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
 </main>
@@ -53,5 +82,9 @@
     <!--<img src="img/footer.png" alt="footer photo">-->
     <!--</div>-->
 </footer>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>
